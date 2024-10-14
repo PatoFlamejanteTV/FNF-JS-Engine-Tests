@@ -2,11 +2,11 @@
   <br>
   <a href="https://github.com/JordanSantiagoYT/FNF-JS-Engine"><img src="assets/exclude/images/jslol.png" alt="JSengine" width="150"></a>
   <br>
-  <b>JS Engine</b>
+  <b>JS Engine (Pato's Version)</b>
   <br>
 </h1>
 <h3 align="center">
-  <b>JS Engine is a heavily modified Psych Engine fork, with lower-end PCs and more customization in mind.</b>
+  <b>JS Engine is a heavily modified Psych Engine fork, with lower-end PCs and more customization in mind. But now, i changed some things in the code/mechanics of the engine :evil:</b>
 </h3>
 
 README.md revamped by [Nael2xd](https://youtube.com/@nael2xd?si=axwJrY_8jdlXUwSm)
