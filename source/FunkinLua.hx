@@ -141,7 +141,7 @@ class FunkinLua {
 		set('week', WeekData.weeksList[PlayState.storyWeek]);
 		set('seenCutscene', PlayState.seenCutscene);
 
-		// Camera poo
+		// Camera 
 		set('cameraX', 0);
 		set('cameraY', 0);
 
@@ -149,7 +149,7 @@ class FunkinLua {
 		set('screenWidth', FlxG.width);
 		set('screenHeight', FlxG.height);
 
-		// PlayState cringe ass nae nae bullcrap
+		// PlayState
 		set('curBeat', 0);
 		set('curStep', 0);
 		set('curDecBeat', 0);
@@ -188,7 +188,7 @@ class FunkinLua {
 			set('defaultOpponentStrumY' + i, 0);
 		}
 
-		// Default character positions woooo
+		// Default character positions
 		set('defaultBoyfriendX', PlayState.instance.BF_X);
 		set('defaultBoyfriendY', PlayState.instance.BF_Y);
 		set('defaultOpponentX', PlayState.instance.DAD_X);
@@ -196,12 +196,12 @@ class FunkinLua {
 		set('defaultGirlfriendX', PlayState.instance.GF_X);
 		set('defaultGirlfriendY', PlayState.instance.GF_Y);
 
-		// Character shit
+		// Character
 		set('boyfriendName', PlayState.SONG.player1);
 		set('dadName', PlayState.SONG.player2);
 		set('gfName', PlayState.SONG.gfVersion);
 
-		// Some settings, no jokes
+		// Some settings
 		set('downscroll', ClientPrefs.downScroll);
 		set('middlescroll', ClientPrefs.middleScroll);
 		set('framerate', ClientPrefs.framerate);
@@ -231,7 +231,11 @@ class FunkinLua {
 		set('buildTarget', 'android');
 		#else
 		set('buildTarget', 'unknown');
+		trace("Unknown target.")
 		#end
+
+		// Patos things
+		set('drawingDebug', FlxG.debugger.drawDebug)
 
 		// custom substate
 		Lua_helper.add_callback(lua, "openCustomSubstate", function(name:String, pauseGame:Bool = false) {
@@ -2318,7 +2322,7 @@ class FunkinLua {
 				}
 			}
 		});
-
+		// thats ugly asf
 		Lua_helper.add_callback(lua, "debugPrint", function(text1:Dynamic = '', text2:Dynamic = '', text3:Dynamic = '', text4:Dynamic = '', text5:Dynamic = '') {
 			if (text1 == null) text1 = '';
 			if (text2 == null) text2 = '';
